@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: var(--eggshell);
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  margin: 1.5rem 0 1rem;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--nutmeg);
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  background-color: white;
+  border-radius: 1.25rem;
+  max-width: 70ch;
+  padding-inline: 2rem;
+}
+
+section {
+  padding-bottom: 1.5rem;
+}
+
+section .prep_time {
+  color: var(--dark-raspberry);
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.2em;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+
+::marker {
+  color: var(--nutmeg);
+  font-weight: 900;
+}
+
+ul,
+ol {
+  padding: 0 1rem;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+.prep_heading {
+    background-color: var(--rose-white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+article {
+    background-color: var(--rose-white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+article ul {
+    padding-left: 1.75rem;
+}
+
+.Ingredients, .Instructions {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.Ingredients ul {
+    list-style-type: square;
+}
+
+.Instructions ol {
+    padding-left: 1.5rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+td {
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+td:nth-child(even) {
+  color: var(--nutmeg);
+  font-weight: 900;
+}
+
+tr:last-child td {
+  border: none;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 8rem;
+  }
+
+  main {
+    padding-inline: 2.25rem;
+  }
+
+  .image__container {
+    padding: 2.25rem 2.25rem 0;
+  }
+
+  img {
+    border-radius: 0.75rem;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+
+  .section__preparation {
+    padding: 1.5rem 2rem;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
+}
+
+
